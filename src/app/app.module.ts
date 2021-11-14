@@ -11,10 +11,12 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { I18nService } from './shared/services/i18n-service';
+
 registerLocaleData(localePt, 'pt-BR');
 @NgModule({
   declarations: [
     AppComponent,
+
 
 
   ],
