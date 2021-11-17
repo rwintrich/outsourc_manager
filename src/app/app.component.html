@@ -359,12 +359,31 @@
 </div> -->
 
 <div>{{ "label.cotasVinculadas" | translate }}</div>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- <lib-datatable></lib-datatable> -->
+<!-- <lib-ui-components></lib-ui-components> -->
+<!-- <ui-out-grid> </ui-out-grid> -->
+<!-- <ui-out-ui-outsourcing></ui-out-ui-outsourcing> -->
+<!-- <consorcio-grid-list></consorcio-grid-list> -->
+
+<!-- <consorcio-grid-list
+  [title]="'label.cota' | translate"
+  [dataSource]="dataSource"
+  [cols]="cols"
+  [totalRecords]="totalElements"
+  [rows]="defaultPage"
+  [label]="label"
+>
+  >
+</consorcio-grid-list> -->
+<consorcio-table
+  class="--full"
+  [dataSource]="dataSource"
+  [displayedColumns]="displayedColumns"
+  [defaultPage]="3"
+  [filtersIcon]="false"
+  [haveSortField]="false"
+>
+</consorcio-table>
+<!-- <consorcio-table> </consorcio-table> -->
 
 <router-outlet></router-outlet>
